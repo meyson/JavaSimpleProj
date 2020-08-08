@@ -1,0 +1,17 @@
+version: 2.1
+
+steps:
+  - run:
+      name: Setup Environment Variables
+      command: |
+        echo "export PATH=$GOPATH/bin:$PATH" >> $BASH_ENV
+        echo "export GIT_SHA1=$CIRCLE_SHA1" >> $BASH_ENV
+
+
+orbs:
+  maven: circleci/maven@0.0.12
+
+workflows:
+  maven_test:
+    jobs:
+      - maven/test # checkout, build, test, and upload test results
