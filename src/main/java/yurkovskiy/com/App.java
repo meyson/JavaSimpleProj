@@ -20,11 +20,11 @@ public class App
         System.out.println("The length of Rectangle is: "+ R.length());
         System.out.println("The square of Rectangle is: "+ R.square());
 
-        Circle C = new Circle(10.0);
+        Circle C = new Circle(20.0);
         System.out.println("The length of Circle is: "+ C.length());
         System.out.println("The square of Circle is: "+ C.square());
 
-        Triangle T = new Triangle(5,5,10);
+        Triangle T = new Triangle(50,50,10);
         System.out.println("The length of Triangle is: "+ C.length());
         System.out.println("The square of Triangle is: "+ C.square());
     }
