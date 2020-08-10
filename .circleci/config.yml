@@ -37,4 +37,6 @@ jobs: # a collection of steps
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo "Deploying to ..."
+            else
+              echo "It's not the master branch..."
             fi
