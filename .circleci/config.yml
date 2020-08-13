@@ -40,3 +40,11 @@ jobs: # a collection of steps
             else
               echo "It's not the master branch..."
             fi
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: |
+            echo "Deploy Over SSH........"
