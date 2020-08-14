@@ -40,8 +40,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            echo "$CIRCLE_BUILD_NUM"
-            echo "$CIRCLE_BUILD_URL"
+            ssh $SSH_USER@$SSH_HOST "echo $CIRCLE_BUILD_NUM > ~/hi.txt"
 
 workflows:
   version: 2
