@@ -33,5 +33,9 @@ pipeline {
         failure {
             sh 'echo "NO NO NONO NONOOONONONONONNONOONO NO"'
         }
+        
+        success {
+            sh 'YES YES YES'
+        }
     }
 }
